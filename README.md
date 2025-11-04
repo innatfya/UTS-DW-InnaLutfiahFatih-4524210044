@@ -60,7 +60,6 @@ Project ini mengusung tema **pengamatan langit malam** dengan:
 - ✨ Update real-time saat user mengetik
 - 🎨 Visual feedback yang menarik
 - 📊 Meter antusiasme dengan warna dinamis
-- 🔄 Auto-reset setelah submit
 ### Styling Kreatif
 - 🌈 Gradasi warna langit malam
 - 💫 Efek hover dan transisi halus
