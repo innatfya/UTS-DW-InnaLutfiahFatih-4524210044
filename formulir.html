@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Formulir dan Pratinjau Workshop </title>
+</head>
+<body>
+<!-- Informasi Umum Workshop -->
+    <!-- Header-->
+    <h1>Registrasi Workshop Pengamatan Langit Malam</h1>
+    <!-- Workshop Formulir-->
+    <form action="/submit-form" method="post"></form>
+    <!--Informasi Umum-->
+    <section id="info-umum">
+    <h2>Informasi Umum ✨</h2>
+        <p>Workshop Observasi Langit malam ini bertujuan untuk memberi pengalaman langsung dalam memahami dan menikmati
+            langit malam lewat dua sesi pengamatan terpisah namun saling melengkapi. Peserta sangat dipersilahkan untuk
+            memiih dua atau hanya satu sesi sesuai minat pengamatan!</p>
+
+        <!-- Susunan Acara -->
+        <section id="rundown">
+            <p>Sesi 1 (18.30-20.30), peserta akan diarahkan mengenali rasi bintang yang sedang musim, belajar membaca peta 
+            langit, lalu mengamati Bulan sabit, Jupiter beserta sabuk awannya, serta cincin Saturnus menggunakan teleskop 
+            refraktor 90 mm dengan lensa okular variabel.</p>
+
+            <p>Sesi 2 (20.45-22.45) difokuskan pada objek deep-sky, seperti gugus bintang Pleiades, Nebula Orion, hingga 
+            Galaksi Andromeda melalui teleskop reflektor 150 mm yang dipasang pada mount GoTo berpelacakan otomatis untuk 
+            memudahkan pencarian objek redup.</p>
+        </section>
+    
+        <p>Di sela-sela pengamatan, peserta akan diajak mengikuti mini game “Tebak Rasi” berbasis laser pointer, dan kuis 
+            cepat bertema astronomi dengan hadiah aksesori pengamatan (filter bulan, red flashlight, atau voucher diskon 
+            teleskop). Doorprize utama akan diundi di akhir sesi berupa tripod ponsel untuk astrofotografi dan satu set buku 
+            peta langit pemula. Seluruh rangkaian dibuka dengan briefing keselamatan malam hari, panduan fokus teleskop, 
+            teknik memotret lewat smartphone adaptor, dan ditutup dengan sesi tanya jawab bersama pembicara. Peserta 
+            dianjurkan membawa jaket hangat, air minum, serta menginstal aplikasi peta bintang di ponsel agar pengalaman 
+            observasi lebih maksimal.</p>
+        
+        <p><strong>Lokasi  :</strong> Planetarium Taman Ismail Marzuki Jakarta</p>
+        <p><strong>Peserta :</strong> Terbuka untuk umum (Peserta kurang dari 17 tahun  disarankan didampingi orang tua)</p>
+    </section>
+    <!-- Pembicara Spesial -->
+    <section id="pembicara">
+    <h2>Special Pembicara 📸✨</h2>
+        <div>
+            <!-- Foto kiri -->
+            <figure id="1">
+                <img src="jisung.jpeg" alt="Foto Pembicara 1">
+                <figcaption>Park Jisung, B.Sc, M.Sc — Astronom &amp; Pengamat Planet</figcaption>
+            </figure>
+            <!-- Foto kanan -->
+            <figure id="2">
+                <img src="jaemin.jpeg" alt="Foto Pembicara 2">
+                <figcaption>Na Jaemin, S.Ked, M.Sc — Ahli Fotografi Astronomi</figcaption>
+            </figure>
+        </div>
+    </section>
+    <!-- Kolom Registrasi Workshop -->
+    <section id="registrasi">
+      <h2>Registrasi Workshop ✨</h2>
+        <p id="nama">
+            <label for="form-name">Nama Lengkap</label><br>
+            <input type="text" id="form-name" name="form_name" required maxlength="80">
+        </p>
+        <p id="email">
+            <label for="form-email">Alamat Email</label><br>
+            <input type="text" id="form-email" name="form_email" required maxlength="80">
+        </p>
+        <p id="telp">
+            <label for="form-telp">Nomor Telepon</label><br>
+            <input type="text" id="form-telp" name="form_telp" required maxlength="80">
+        </p>
+        <p id="sesi">
+            <label for="form-category">Pilih Sesi Sesuai Minat Anda</label><br>
+            <input list="categories" id="form-category" name="form_category">
+            <datalist id="categories">
+            <option value="Sesi 1 - 18.30-20.30 : Planet dan Rasi Bintamg "></option>
+            <option value="Sesi 2 - 20.45-22.45 : Deepsky dan Gugus Bintang"></option>
+            </datalist>
+        </p>
+        <p id="enthu">
+            <label for="antusias">Seberapa Antusias Anda?! (1-5)</label><br>
+            <input type="range" id="antusias" name="antusias" min="1" max="5" step="1">
+        </p>
+        <p id="alasan">
+            <label for="form-alasan">Alasan Anda Mengikuti Workshop!</label><br>
+            <textarea id="for-alasan" name="form-alasan" rows="5" cols="50"
+                    placeholder="Ingin melihat saturnus!"></textarea>
+        </p>
+    </section>
+    <!-- Kirim -->
+    <button type="submit">Kirim Sekarang!</button>
+  </form>
+
+<hr>
+<!-- Bagian Pratinjau (Input) Registrasi -->
+<section id="preview-registrasi">
+<h2>Berikut Data Registrasi Kamu 🤺🍃</h2>
+    <article>
+        <h3>Nama Lengkap Anda</h3>
+            <ul id="preview-name">
+            <li>Aidan Volkov</li>
+            </ul>
+        <h3>Email Anda</h3>
+            <ul id="preview-email">
+            <li>Aidansayanginna@gmail.com</li>
+            </ul>
+        <h3>Nomor Telepon Anda</h3>
+            <ul id="preview-telp">
+            <li>082172274247</li>
+             </ul>
+        <h3>Sesi yang Anda Pilih</h3>
+            <ul id="preview-sesi">
+            <li>Sesi 2 - 20.45-22.45 : Deepsky dan Gugus Bintang</li>
+            </ul>
+        <h3>Alasan Anda Mengikuti Workshop</h3>
+            <div id="preview-alasan">
+            Belum ada alasan yang diinput...
+            </div>
+        <h3>Tingkat Antusias Anda</h3>
+            <meter id="preview-difficulty" min="1" max="5" value="5"></meter>
+            <span id="meteran">sangat antusias!</span>
+    </article>
+</section>
+
+<!--Bagian Footer-->
+ <footer>
+    <p> &copy; 2025 Event Astronomiku Sayang </p>
+    <h5>Pantau Informasi Lengkapnya pada Instagram Event Kami :</h3>
+    <ul>
+        <li><a href="https://www.instagram.com/innatfya__" target="_blank">Instagram</a></li>
+    </ul>
+ </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
